@@ -19,21 +19,24 @@
 # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-# a = 1
-# b = 2
-# for i in range(1, 10):
-# 		c = a + b
-# 		a = b
-# 		b = c
+sum = 0
+a = 1
+b = 0
+while a < 4000000:
+	a = b + a
+	b = a - b
+	if a % 2 == 0:
+		sum = sum + a
 
-# if i % 2 == 0:
-# 	print (a) 
+print(sum)
 
 # 3.
 
-The prime factors of 13195 are 5, 7, 13 and 29.
+# The prime factors of 13195 are 5, 7, 13 and 29.
 
-What is the largest prime factor of the number 600851475143 ?
+# What is the largest prime factor of the number 600851475143 ?
+
+
 
 
 
